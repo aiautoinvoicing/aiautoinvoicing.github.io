@@ -1,24 +1,23 @@
 // import { TFunction } from "react-i18next";
 export interface ContentBlockProps {
-  icon: string;
-  title: string;
-  content: string;
-  section?: {
+    icon: string;
     title: string;
     content: string;
-    icon: string;
-  }[];
-  button?: (
-    | {
+    section?: {
         title: string;
-        color?: undefined;
-      }
-    | {
-        title: string;
-        color: string;
-      }
-  )[];
-  t: any;
-  id: string;
-  direction: "left" | "right";
+        content: string;
+        icon: string;
+    }[];
+    button?: (
+        | {
+            title: string;
+            color?: undefined;
+        }
+        | {
+            title: string;
+            color: string;
+        }
+    )[];
+    id: string;
+    direction: "left" | "right";
 }

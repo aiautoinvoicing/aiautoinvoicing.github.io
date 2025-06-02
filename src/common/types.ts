@@ -29,6 +29,7 @@ export interface InputProps {
       | React.ChangeEvent<HTMLTextAreaElement>
   ) => void;
 }
+
 export interface validateProps {
   name: string;
   message: string;

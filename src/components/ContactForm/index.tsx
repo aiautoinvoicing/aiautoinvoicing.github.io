@@ -1,7 +1,7 @@
 import { Row, Col } from "antd";
 import { withTranslation } from "react-i18next";
 import { Slide } from "react-awesome-reveal";
-import { ContactProps, ValidationTypeProps } from "./types";
+import type { ContactProps, ValidationTypeProps } from "./types";
 import { useForm } from "../../common/utils/useForm";
 import validate from "../../common/utils/validationRules";
 import { Button } from "../../common/Button";
