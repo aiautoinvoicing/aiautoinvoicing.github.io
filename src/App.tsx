@@ -1,35 +1,39 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { Suspense, lazy } from "react";
+import Header from "./components/Header";
+import ScrollToTop from "./common/ScrollToTop";
+import MiddleBlockContent from "./content/MiddleBlockContent.json";
+import IntroContent from "./content/IntroContent.json";
+
+const ContentBlock = lazy(() => import("./components/ContentBlock"));
+const MiddleBlock = lazy(() => import("./components/MiddleBlock"));
+const Contact = lazy(() => import("./components/ContactForm"));
+const Footer = lazy(() => import("./components/Footer"));
 
 function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    return (
+        <>
+            <Header />
+            {/* <ScrollToTop />
+            <Suspense fallback={<div>Loading...</div>}>
+                <ContentBlock
+                    direction="right"
+                    title={IntroContent.title}
+                    content={IntroContent.text}
+                    button={IntroContent.button}
+                    icon="developer.svg"
+                    id="intro"
+                />
+                <MiddleBlock
+                    title={MiddleBlockContent.title}
+                    content={MiddleBlockContent.text}
+                    button={MiddleBlockContent.button}
+                    id="about"
+                />
+                <Contact />
+                <Footer />
+            </Suspense> */}
+        </>
+    );
 }
 
-export default App
+export default App;
