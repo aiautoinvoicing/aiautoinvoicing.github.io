@@ -1,6 +1,10 @@
 import { Row } from "antd";
 import styled from "styled-components";
 
+interface StyledRowProps {
+  direction?: "left" | "right";
+}
+
 export const ContentSection = styled("section")`
   position: relative;
   padding: 0rem 0 8rem;
@@ -14,8 +18,8 @@ export const Content = styled("p")`
   margin: 1.5rem 0 2rem 0;
 `;
 
-export const StyledRow = styled(Row)`
-  flex-direction: ${({ direction }: { direction: string }) =>
+export const StyledRow = styled(Row)<StyledRowProps>`
+  flex-direction: ${({ direction = "left" }) =>
     direction === "left" ? "row" : "row-reverse"};
 `;
 
