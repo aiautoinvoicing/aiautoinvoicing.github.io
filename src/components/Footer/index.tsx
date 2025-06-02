@@ -121,23 +121,23 @@ const Footer = () => {
             </NavLink>
             <FooterContainer>
               <SocialLink
-                href="https://github.com/Adrinlol/create-react-app-adrinlol"
+                href="https://github.com/aiautoinvoicing/"
                 src="github.svg"
               />
               <SocialLink
-                href="https://twitter.com/Adrinlolx"
+                href="https://x.com/aiautoinvoicing"
                 src="twitter.svg"
               />
               <SocialLink
-                href="https://www.linkedin.com/in/lasha-kakabadze/"
-                src="linkedin.svg"
+                href="https://facebook.com/aiautoinvoicing"
+                src="facebook.svg"
               />
               <SocialLink
-                href="https://medium.com/@lashakakabadze/"
-                src="medium.svg"
+                href="https://reddit.com/r/AIAutoInvoicing"
+                src="reddit.svg"
               />
               <a
-                href="https://ko-fi.com/Y8Y7H8BNJ"
+                href="https://ko-fi.com/aiautoinvoicing"
                 target="_blank"
                 rel="noopener noreferrer"
               >
