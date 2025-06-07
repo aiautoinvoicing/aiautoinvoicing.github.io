@@ -39,7 +39,7 @@ const Header = () => {
                     <Span>Mission</Span>
                 </CustomNavLinkSmall>
                 <CustomNavLinkSmall onClick={() => scrollTo("product")}>
-                    <Span>Product</Span>
+                    <Span>FAQ</Span>
                 </CustomNavLinkSmall>
                 <CustomNavLinkSmall
                     style={{ width: "180px" }}
