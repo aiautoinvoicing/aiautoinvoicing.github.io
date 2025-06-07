@@ -1,4 +1,4 @@
-import{d as t,M as p,j as e,N as c,R as l,C as r,S as o}from"./index-BzFxvAzS.js";const j=t("footer")`
+import{d as t,M as p,j as e,N as c,R as l,C as r,S as o}from"./index-D-A-c9R1.js";const j=t("footer")`
   background: rgb(241, 242, 243);
   padding: 2.5rem 0;
 `,d=t("h4")`
