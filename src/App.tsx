@@ -16,7 +16,6 @@ const ContentBlock = lazy(() => import("./components/ContentBlock"));
 const MiddleBlock = lazy(() => import("./components/MiddleBlock"));
 const Contact = lazy(() => import("./components/ContactForm"));
 const Footer = lazy(() => import("./components/Footer"));
-import FAQ from "@/pages/Home/FAQ";
 
 function App() {
     return (
