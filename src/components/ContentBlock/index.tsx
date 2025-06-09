@@ -45,7 +45,7 @@ const ContentBlock = ({
                     </Col>
                     <Col lg={11} md={11} sm={11} xs={24}>
                         <ContentWrapper>
-                            <h6>{title}</h6>
+                            <h6 style={{ marginBottom: "12px" }}>{title}</h6>
                             <Content>{content}</Content>
                             {direction === "right" ? (
                                 <ButtonWrapper>

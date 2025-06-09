@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Row, Col, Drawer } from "antd";
+import { Link } from "react-router-dom";
 
 import Container from "../../common/Container";
 import { SvgIcon } from "../../common/SvgIcon";
@@ -15,6 +16,7 @@ import {
     Outline,
     Span,
 } from "./styles";
+import { useNavigate, useLocation } from "react-router-dom";
 
 const Header = () => {
     const [visible, setVisibility] = useState(false);
@@ -23,12 +25,36 @@ const Header = () => {
         setVisibility(!visible);
     };
 
+    const navigate = useNavigate();
+    const location = useLocation();
+
+    const scrollTo = (id: string) => {
+        if (location.pathname !== "/") {
+            // Navigate to home first, then scroll after slight delay
+            navigate("/");
+
+            setTimeout(() => {
+                const el = document.getElementById(id);
+                if (el) {
+                    el.scrollIntoView({ behavior: "smooth" });
+                }
+            }, 100); // Adjust delay if needed
+        } else {
+            const el = document.getElementById(id);
+            if (el) {
+                el.scrollIntoView({ behavior: "smooth" });
+            }
+        }
+
+        setVisibility(false); // Close drawer if open
+    };
+
     const MenuItem = () => {
-        const scrollTo = (id: string) => {
-            const element = document.getElementById(id) as HTMLDivElement;
-            element.scrollIntoView({ behavior: "smooth" });
-            setVisibility(false);
-        };
+        // const scrollTo = (id: string) => {
+        //     const element = document.getElementById(id) as HTMLDivElement;
+        //     element.scrollIntoView({ behavior: "smooth" });
+        //     setVisibility(false);
+        // };
 
         return (
             <>
@@ -39,8 +65,13 @@ const Header = () => {
                     <Span>Mission</Span>
                 </CustomNavLinkSmall>
                 <CustomNavLinkSmall onClick={() => scrollTo("product")}>
+                    <Span>Product</Span>
+                </CustomNavLinkSmall>
+
+                <CustomNavLinkSmall as={Link} to="/faq">
                     <Span>FAQ</Span>
                 </CustomNavLinkSmall>
+
                 <CustomNavLinkSmall
                     style={{ width: "180px" }}
                     onClick={() => scrollTo("contact")}
