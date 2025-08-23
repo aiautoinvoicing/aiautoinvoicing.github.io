@@ -1,67 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Privacy Policy - AI Auto Invoicing</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Privacy Policy - AI Auto Invoicing</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        h1,
+        h2 {
+            color: #222;
+        }
+
+        h1 {
+            border-bottom: 2px solid #0078d4;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        ul {
+            margin-left: 1.25rem;
+        }
+
+        a {
+            color: #0078d4;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        p {
+            margin-top: 0.75rem;
+        }
+
+        footer {
+            margin-top: 3rem;
+            font-size: 0.9rem;
+            color: #666;
+            text-align: center;
+        }
+    </style>
 </head>
+
 <body>
-  <h1>Privacy Policy</h1>
-  <p>Last updated: May 9, 2025</p>
+    <h1>Privacy Policy</h1>
+    <p><em>Last updated: August 20, 2025</em></p>
 
-  <p>
-    <strong>AI Auto Invoicing</strong> and <strong>Zen Nota</strong> is committed to protecting your privacy. This Privacy Policy explains how we handle your information when you use our mobile application.
-  </p>
+    <p>
+        <strong>AI Auto Invoicing</strong> and <strong>Zen Nota</strong> is committed to protecting your privacy. This Privacy Policy explains how we
+        collect, use, and safeguard your information when you use our mobile application available on the Google Play
+        Store.
+    </p>
 
-  <h2>1. Information We Collect</h2>
-  <p>We do <strong>not collect or store any personal data</strong> on our servers.</p>
-  <ul>
-    <li>All data (clients, items, invoices) is stored locally on your device only.</li>
-    <li>No account signup, login, or cloud sync is required.</li>
-  </ul>
+    <h2>1. Information We Collect</h2>
+    <p>We strive to minimize the personal information we collect. Here is an overview:</p>
+    <ul>
+        <li><strong>Local Data:</strong> All your invoice data, clients, and items may be stored locally on your device.</li>
+        <li><strong>Cloud Data:</strong> If you sign in with an account, your invoices, clients, and related information may be securely stored in
+            <strong>Google Firestore</strong> to allow syncing across devices.</li>
+        <li><strong>User Accounts:</strong> We use <strong>Google Firebase Authentication</strong> to manage sign-in and registration. Depending on your chosen method
+            (Google, Microsoft, Facebook, or email/password), we collect basic profile information (e.g., name, email) to manage your account.</li>
+        <li><strong>Payments:</strong> We do not collect your payment details directly; payments and subscriptions are
+            processed securely via Google Play’s billing system.</li>
+    </ul>
 
-  <h2>2. Permissions</h2>
-  <p>The app may request the following permissions:</p>
-  <ul>
-    <li><strong>Storage:</strong> To save invoice PDFs to your device.</li>
-    <li><strong>Internet:</strong> For optional AI-powered features (e.g., formatting suggestions).</li>
-  </ul>
+    <h2>2. User Accounts and Authentication</h2>
+    <p>
+        Account creation and login are handled using <strong>Google Firebase Authentication</strong>. If you register or sign in using third-party providers 
+        (Google, Microsoft, Facebook), authentication is securely handled by those services. We only receive and store 
+        basic profile information such as your name and email to create and manage your account within the app.
+    </p>
+    <p>
+        Your login credentials are never stored or accessed by us directly. You can manage or delete your account by
+        contacting us or through account settings where available.
+    </p>
 
-  <h2>3. Data Sharing</h2>
-  <p>
-    We do not share your data with third parties. All information entered into the app remains private and on your device.
-  </p>
+    <h2>3. Payments and Subscriptions</h2>
+    <p>
+        Purchases such as customized templates and subscriptions are processed securely through Google Play’s payment
+        system. We do not store or have access to your payment information.
+    </p>
+    <p>
+        Donations or “Buy me a coffee” contributions are made via external platforms (e.g., BuyMeACoffee.com, Ko-fi.com, PayPal)
+        through direct links. These payments are handled entirely by those third-party services, and our app does not
+        process or store any payment information related to these transactions.
+    </p>
+    <p>
+        Subscription renewals, cancellations, and refunds are managed through your Google Play account. Please refer to
+        Google Play’s policies for more details.
+    </p>
 
-  <h2>4. AI Features</h2>
-  <p>
-    Some AI features may use third-party APIs (such as OpenAI) to assist with formatting or text generation. These features are optional and do not transmit sensitive business or client data.
-  </p>
+    <h2>4. Permissions</h2>
+    <p>The app may request the following permissions:</p>
+    <ul>
+        <li><strong>Storage:</strong> To save invoice PDFs and other files on your device.</li>
+        <li><strong>Internet:</strong> For optional AI-powered features such as formatting suggestions and text
+            generation, as well as syncing data with Google Firestore.</li>
+    </ul>
 
-  <h2>5. Children’s Privacy</h2>
-  <p>
-    This app is not intended for use by children under the age of 13. We do not knowingly collect personal information from children.
-  </p>
+    <h2>5. Data Sharing and Third-Party Services</h2>
+    <p>
+        We do not sell or share your personal data with third parties for marketing purposes. However, to provide
+        certain features, we use trusted third-party services:
+    </p>
+    <ul>
+        <li><strong>Authentication Providers:</strong> Google Firebase Authentication (Google, Microsoft, Facebook, or email/password).</li>
+        <li><strong>Database:</strong> Google Firestore for securely storing your invoice and client data when using account features.</li>
+        <li><strong>Payment Processing:</strong> Google Play billing for handling payments.</li>
+        <li><strong>Donations:</strong> External platforms such as BuyMeACoffee.com, Ko-fi.com, and PayPal.</li>
+        <li><strong>AI Features:</strong> Optional AI APIs such as OpenAI for formatting and text generation assistance.
+            These do not receive sensitive or personal data.</li>
+    </ul>
 
-  <h2>6. Your Control</h2>
-  <p>
-    You can delete all data stored in the app at any time by clearing the app’s data via Android settings.
-  </p>
+    <h2>6. Children’s Privacy</h2>
+    <p>
+        Our app is not intended for children under the age of 16. In certain regions, local laws may allow a lower age of digital consent (between 13 and 16). 
+        We do not knowingly collect personal information from users below the applicable age of consent.
+    </p>
 
-  <h2>7. Changes to This Policy</h2>
-  <p>
-    We may update this Privacy Policy from time to time. Any changes will be posted here with the revised date.
-  </p>
+    <h2>7. Your Rights and Controls</h2>
+    <p>
+        You have the right to access, update, or delete your personal information stored in the app. For account-related
+        data, please contact us or use available account management options.
+    </p>
+    <p>
+        You can manage or cancel subscriptions through your Google Play account settings.
+    </p>
+    <p>
+        To delete all app data stored locally on your device, you can clear the app’s data via your Android device
+        settings. For cloud data stored in Firestore, you may request deletion by contacting us.
+    </p>
 
-  <h2>8. Rewards and Referral Credits</h2>
-<p>
-AI Auto Invoicing may offer referral or promotional credit programs. These credits are not real currency and may only be used within the app to unlock features or receive discounts. Credits have no cash value and cannot be transferred or withdrawn.
-</p>
+    <h2>8. Changes to This Privacy Policy</h2>
+    <p>
+        We may update this Privacy Policy occasionally to reflect changes in our practices or for legal reasons. Any
+        changes will be posted here with an updated revision date.
+    </p>
 
-  <h2>9. Contact Us</h2>
-  <p>
-    If you have any questions or concerns about this policy, please contact us at:
-    <br>
-    <a href="mailto:aiautoinvoicing@gmail.com">aiautoinvoicing@gmail.com</a>
-  </p>
+    <h2>9. Rewards and Referral Credits</h2>
+    <p>
+        AI Auto Invoicing may offer referral programs and promotional credits. These credits are not real currency and
+        can only be used within the app to unlock features or discounts. They have no cash value and are
+        non-transferable.
+    </p>
 
+    <h2>10. Contact Us</h2>
+    <p>
+        If you have any questions, concerns, or requests regarding this Privacy Policy or your data, please contact us
+        at:
+        <br />
+        <a href="mailto:aiautoinvoicing@gmail.com">aiautoinvoicing@gmail.com</a>
+    </p>
+
+    <footer>
+        &copy; 2025 AI Auto Invoicing. All rights reserved.
+    </footer>
 </body>
+
 </html>
