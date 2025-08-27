@@ -1,26 +1,14 @@
-// import React from "react";
-// import ReactDOM from "react-dom/client";
-// import { BrowserRouter } from "react-router-dom";
-// import App from "./App";
-
-// ReactDOM.createRoot(document.getElementById("root")!).render(
-//     <React.StrictMode>
-//         <BrowserRouter>
-//             <App />
-//         </BrowserRouter>
-//     </React.StrictMode>
-// );
-
 
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { BrowserRouter } from "react-router-dom";
+// import { BrowserRouter } from "react-router-dom";
+import { HashRouter as Router } from "react-router-dom";
 import MainRoutes from "./MainRoutes";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
     <React.StrictMode>
-        <BrowserRouter>
+        <Router>
             <MainRoutes />
-        </BrowserRouter>
+        </Router>
     </React.StrictMode>
 );
